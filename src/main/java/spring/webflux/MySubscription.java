@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Flow;
 
-public class MySubscription implements Flow.Subscription{
+public class MySubscription implements Flow.Subscription {
     private final MyPublisher publisher;
     private final ExecutorService executor;
     private boolean canceled = false;

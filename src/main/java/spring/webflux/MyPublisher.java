@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Flow;
 
-public class MyPublisher implements Flow.Publisher<Message>{
+public class MyPublisher implements Flow.Publisher<Message> {
     private final List<Flow.Subscriber<? super Message>> subscribers = new ArrayList<>();
     private final ExecutorService executor = Executors.newFixedThreadPool(2);
 
